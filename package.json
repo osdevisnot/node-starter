@@ -1,0 +1,35 @@
+{
+  "name": "node-starter",
+  "version": "0.0.0",
+  "private": "true",
+  "license": "MIT",
+  "author": "osdevisnot <osdevisnot@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "node ./build.cjs build",
+    "lint": "xo --fix",
+    "coverage": "xo && vitest run --coverage",
+    "start": "node ./build.cjs start",
+    "test": "vitest"
+  },
+  "xo": {
+    "prettier": true
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "printWidth": 120,
+    "singleQuote": true,
+    "useTabs": true
+  },
+  "devDependencies": {
+    "c8": "^7.11.2",
+    "esbuild": "^0.14.38",
+    "prettier": "^2.6.2",
+    "vitest": "^0.10.2",
+    "xo": "^0.48.0"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  }
+}
