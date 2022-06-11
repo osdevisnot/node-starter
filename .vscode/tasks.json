@@ -6,7 +6,7 @@
 			"dependsOn": ["start", "test"],
 			"group": {
 				"kind": "build",
-				"isDefault": true,
+				"isDefault": true
 			}
 		},
 		{
@@ -14,15 +14,15 @@
 			"type": "npm",
 			"script": "start",
 			"presentation": {
-				"group": "shared",
+				"group": "shared"
 			}
 		},
 		{
 			"label": "test",
 			"type": "npm",
-			"script": "test",
+			"script": "test:watch",
 			"presentation": {
-				"group": "shared",
+				"group": "shared"
 			}
 		}
 	]

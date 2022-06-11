@@ -8,7 +8,7 @@ RUN if [ ! -f package-lock.json ]; then echo "WARNING: package-lock.json not det
 RUN npm ci
 
 COPY . .
-RUN npm run coverage
+RUN npm run test
 RUN npm run build
 RUN npm prune --production
 

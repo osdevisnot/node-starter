@@ -17,13 +17,16 @@ A skeleton for modern nodejs projects.
 
 ## NPM Scripts
 
-| Script   | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| start    | runs a live reloading http server based on native `node:http` |
-| build    | creates a production ready deployment                         |
-| test     | runs vitest in watch mode                                     |
-| coverage | creates a code coverage report                                |
-| lint     | lints using XO                                                |
+| Script     | Description                                                   |
+| ---------- | ------------------------------------------------------------- |
+| start      | runs a live reloading http server based on native `node:http` |
+| build      | creates a production ready deployment                         |
+| test       | runs vitest in coverage mode                                  |
+| test:watch | runs vitest in watch mode                                     |
+| lint       | lints code using XO in autofix mode                           |
+| validate   | lints using XO                                                |
+| clean      | cleans up local workspace                                     |
+| format     | formats all src and test files with prettier                  |
 
 ## Usage
 
