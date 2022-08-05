@@ -7,6 +7,7 @@ A skeleton for modern nodejs projects.
 - Modern Javascript Syntax transforms
 - Best Practices [Multistage Dockerfile](https://docs.docker.com/develop/develop-images/multistage-build/)
 - vscode tasks to start server and test using split terminal (try ⌘+⇧+B)
+- vscode settings for xo and better DX
 
 ## Powered By
 
@@ -17,16 +18,15 @@ A skeleton for modern nodejs projects.
 
 ## NPM Scripts
 
-| Script     | Description                                                   |
-| ---------- | ------------------------------------------------------------- |
-| start      | runs a live reloading http server based on native `node:http` |
-| build      | creates a production ready deployment                         |
-| test       | runs vitest in coverage mode                                  |
-| test:watch | runs vitest in watch mode                                     |
-| lint       | lints code using XO in autofix mode                           |
-| validate   | lints using XO                                                |
-| clean      | cleans up local workspace                                     |
-| format     | formats all src and test files with prettier                  |
+| Script   | Description                                  |
+| -------- | -------------------------------------------- |
+| clean    | cleans up local workspace                    |
+| start    | runs http server based on native `node:http` |
+| build    | creates a production ready deployment        |
+| test     | runs vitest in watch mode                    |
+| coverage | runs vitest in coverage mode                 |
+| format   | formats all src and test files with prettier |
+| lint     | lints code using XO in autofix mode          |
 
 ## Usage
 
@@ -35,12 +35,3 @@ Clone this starter using degit:
 ```bash
 npx degit osdevisnot/node-starter my-app
 ```
-
-## FAQs
-
-### How to upgrade node.js version?
-
-- First update node.js and NPM engine version in `package.json` engines field.
-- Ensure all npm scripts work with new node version
-- Update the node.js version in Dockerfile
-- Ensure application works with updated Dockerfile

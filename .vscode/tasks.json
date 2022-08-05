@@ -20,7 +20,7 @@
 		{
 			"label": "test",
 			"type": "npm",
-			"script": "test:watch",
+			"script": "test",
 			"presentation": {
 				"group": "shared"
 			}
